@@ -1,0 +1,14 @@
+{
+    "name": "com.dennishawran.readytorumble",
+    "version": "1.1.91",
+    "displayName": "Controller Rumble",
+    "description": "Make your controller rumble",
+    "unity": "2021.3",
+    "author": {
+        "name": "Dennis Hawran",
+        "email": "dennis.hawran@bearbones.de"
+    },
+    "dependencies": {
+        "com.unity.inputsystem": "1.4.4"
+    }
+}
