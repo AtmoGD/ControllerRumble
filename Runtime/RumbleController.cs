@@ -46,7 +46,7 @@ namespace RumbleController
             Rumble();
         }
 
-        public void Rumble()
+        private void Rumble()
         {
             if (gamepad == null) return;
 
@@ -69,6 +69,22 @@ namespace RumbleController
                 rumbleData = rumbleData,
                 timeLeft = rumbleData.duration
             });
+        }
+
+        public void SetTask(RumbleData rumbleData)
+        {
+            ClearTasks();
+            AddTask(rumbleData);
+        }
+
+        public void RemoveTask(RumbleData rumbleData)
+        {
+            tasks.RemoveAll(task => task.rumbleData == rumbleData);
+        }
+
+        public void ClearTasks()
+        {
+            tasks.Clear();
         }
     }
 }
